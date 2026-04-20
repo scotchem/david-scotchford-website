@@ -1,0 +1,57 @@
+================================================================================
+DAVID SCOTCHFORD WEBSITE - QUICK START GUIDE
+================================================================================
+
+PROJECT LOCATION: /home/ubuntu/david-scotchford-website
+
+QUICK COMMANDS:
+===============
+Development:     pnpm dev              (runs at http://localhost:5173)
+Production:      pnpm build            (creates dist/ folder)
+Preview:         pnpm preview          (preview production build)
+Install:         pnpm install          (install dependencies)
+
+KEY FILES TO EDIT:
+==================
+Content:         src/pages/*.tsx       (edit page content directly)
+Colors:          src/index.css         (CSS variables at top)
+Navigation:      src/components/Navigation.tsx
+Styles:          src/App.css           (component styles)
+
+PAGES INCLUDED:
+===============
+✓ Homepage       - Hero section with featured projects
+✓ About          - Biography and expertise
+✓ Portfolio      - Projects with filtering
+✓ Video Gallery  - Choreography reels and performances
+✓ Credits        - Professional timeline
+✓ Testimonials   - Client quotes
+✓ Contact        - Inquiry form and FAQ
+
+DESIGN SPECS:
+=============
+Colors:          Dark theme with gold accents
+Fonts:           Playfair Display (headings), Inter (body)
+Responsive:      Mobile, tablet, desktop
+Animations:      Smooth transitions and hover effects
+
+DEPLOYMENT:
+===========
+1. Run: pnpm build
+2. Upload dist/ folder to hosting
+3. See DEPLOYMENT.md for detailed instructions
+
+DOCUMENTATION:
+===============
+WEBSITE_GUIDE.md  - Full customization guide
+DEPLOYMENT.md     - Deployment instructions
+PROJECT_SUMMARY.md - Complete project overview
+
+SUPPORT:
+========
+- React: https://react.dev
+- Tailwind: https://tailwindcss.com
+- Vite: https://vitejs.dev
+
+STATUS: ✅ PRODUCTION READY
+================================================================================
