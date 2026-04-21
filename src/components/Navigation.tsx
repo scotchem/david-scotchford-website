@@ -10,10 +10,9 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
 
   const navItems = [
     { id: 'home', label: 'Home' },
-    { id: 'portfolio', label: 'Portfolio' },
     { id: 'video', label: 'Video' },
-    { id: 'credits', label: 'Credits' },
-    { id: 'testimonials', label: 'Testimonials' },
+    { id: 'originalwork', label: 'Original Work' },
+    { id: 'resume', label: 'Resume' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -29,7 +28,7 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
         <a href="#" className="logo" onClick={() => handleNavClick('home')}>
           David Scotchford
         </a>
-        
+
         <ul className="nav-links">
           {navItems.map((item) => (
             <li key={item.id}>
@@ -50,8 +49,9 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
         <button
           className="mobile-menu-btn"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
         >
-          ☰
+          {mobileMenuOpen ? '✕' : '☰'}
         </button>
       </div>
 

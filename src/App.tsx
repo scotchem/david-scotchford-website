@@ -2,14 +2,12 @@ import { useState } from 'react';
 import './App.css';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
-import About from './pages/About';
-import Portfolio from './pages/Portfolio';
 import VideoGallery from './pages/VideoGallery';
-import Credits from './pages/Credits';
-import Testimonials from './pages/Testimonials';
+import OriginalWork from './pages/OriginalWork';
+import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
-type Page = 'home' | 'about' | 'portfolio' | 'video' | 'credits' | 'testimonials' | 'contact';
+type Page = 'home' | 'video' | 'originalwork' | 'resume' | 'contact';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -18,18 +16,14 @@ function App() {
     switch (currentPage) {
       case 'home':
         return <Home />;
-      case 'about':
-        return <About />;
-      case 'portfolio':
-        return <Portfolio />;
       case 'video':
         return <VideoGallery />;
-      case 'credits':
-        return <Credits />;
-      case 'testimonials':
-        return <Testimonials />;
+      case 'originalwork':
+        return <OriginalWork />;
+      case 'resume':
+        return <Resume />;
       case 'contact':
-        return <Contact />;
+        return <Contact setCurrentPage={(page: string) => setCurrentPage(page as Page)} />;
       default:
         return <Home />;
     }
