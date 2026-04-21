@@ -43,7 +43,7 @@ const videos: VideoItem[] = [
     category: 'Broadway',
     description:
       'Associate choreographer to Tony Award–winning choreographer Warren Carlyle on the acclaimed Broadway revival.',
-    thumbnail: '/still_carousel.jpg',
+    thumbnail: '/still_music_man.png',
     year: '2022',
   },
   {
