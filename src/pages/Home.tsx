@@ -42,7 +42,7 @@ export default function Home() {
       <section className="positioning-section">
         <div className="section-container">
           <p className="positioning-text">
-            David Scotchford creates premium live entertainment for theatrical and cruise audiences. His work spans original show creation, direction, choreography, and creative leadership — shaping performance experiences that are emotionally resonant, immersive, and dynamic.
+            Original show creation, direction, choreography, and creative development.
           </p>
         </div>
       </section>
