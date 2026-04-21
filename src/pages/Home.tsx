@@ -27,7 +27,6 @@ export default function Home() {
         <div className="hero-content">
           <h1 className="hero-title">David Scotchford</h1>
           <p className="hero-subtitle">Creative Content Creator & Consultant</p>
-          <p className="hero-description">Premium live entertainment for cruise, theatrical, and experiential performance</p>
         </div>
       </section>
 

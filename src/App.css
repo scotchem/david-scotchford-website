@@ -150,6 +150,7 @@ nav .container {
   text-align: center;
   color: var(--warm-white);
   animation: slideUp 1s ease-out;
+  margin-top: -20vh;
 }
 
 .hero-content h1 {
