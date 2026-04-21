@@ -10,7 +10,6 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
 
   const navItems = [
     { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
     { id: 'portfolio', label: 'Portfolio' },
     { id: 'video', label: 'Video' },
     { id: 'credits', label: 'Credits' },
