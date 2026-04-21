@@ -71,7 +71,7 @@ export default function Home() {
           <div className="pillars-grid">
             <div className="pillar">
               <h3 className="pillar-title">Original Concepts</h3>
-              <p className="pillar-text">Creating new live entertainment ideas and audience experiences from the ground up.</p>
+              <p className="pillar-text">New live entertainment ideas, and audience experiences developed from the ground up.</p>
             </div>
             <div className="pillar">
               <h3 className="pillar-title">Creative Development</h3>
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
             <div className="pillar">
               <h3 className="pillar-title">Direction & Choreography</h3>
-              <p className="pillar-text">Leading movement, performance, and rehearsal to bring each piece fully to life.</p>
+              <p className="pillar-text">Elevating movement and performance to bring each piece fully to life.</p>
             </div>
           </div>
         </div>
