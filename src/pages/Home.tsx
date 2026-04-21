@@ -70,16 +70,16 @@ export default function Home() {
         <div className="section-container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="pillars-grid">
             <div className="pillar">
-              <h3 className="pillar-title">Original Show Creation</h3>
-              <p className="pillar-text">Developing original live entertainment concepts from initial idea through creative shape, movement language, and audience experience.</p>
+              <h3 className="pillar-title">Original Concepts</h3>
+              <p className="pillar-text">Creating new live entertainment ideas and audience experiences from the ground up.</p>
             </div>
             <div className="pillar">
-              <h3 className="pillar-title">Creative Direction & Consulting</h3>
-              <p className="pillar-text">Collaborating with clients and creative teams to refine, elevate, and strengthen entertainment concepts, structure, and staging.</p>
+              <h3 className="pillar-title">Creative Development</h3>
+              <p className="pillar-text">Collaborating with creative teams to refine, elevate, and strengthen work in development.</p>
             </div>
             <div className="pillar">
-              <h3 className="pillar-title">Choreography & Staging</h3>
-              <p className="pillar-text">Crafting movement-driven performance experiences that are theatrical, dynamic, and tailored to the world of each production.</p>
+              <h3 className="pillar-title">Direction & Choreography</h3>
+              <p className="pillar-text">Leading movement, performance, and rehearsal to bring each piece fully to life.</p>
             </div>
           </div>
         </div>
