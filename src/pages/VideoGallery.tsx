@@ -80,7 +80,7 @@ export default function VideoGallery() {
           <div className="video-hero-overlay" />
         </div>
         <div className="video-hero-content">
-          <p className="video-hero-eyebrow">Selected Work</p>
+          <p className="video-hero-eyebrow">Portfolio</p>
           <h1 className="video-hero-title">The Work</h1>
           <p className="video-hero-sub">
             A curated selection of productions, concepts, and collaborations across cruise,
