@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
+  const section4VideoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,15 +13,36 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Safari autoplay fix
+  useEffect(() => {
+    const tryPlay = (video: HTMLVideoElement | null) => {
+      if (video) { video.muted = true; video.play().catch(() => {}); }
+    };
+    tryPlay(heroVideoRef.current);
+    tryPlay(section4VideoRef.current);
+    const handleInteraction = () => {
+      tryPlay(heroVideoRef.current);
+      tryPlay(section4VideoRef.current);
+    };
+    document.addEventListener('touchstart', handleInteraction, { once: true });
+    document.addEventListener('click', handleInteraction, { once: true });
+    return () => {
+      document.removeEventListener('touchstart', handleInteraction);
+      document.removeEventListener('click', handleInteraction);
+    };
+  }, []);
+
   return (
     <div className="home-page">
       {/* Section 1: Hero */}
       <section className="hero-section">
         <video
+          ref={heroVideoRef}
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
           className="hero-video"
         >
           <source src="/hero.mp4" type="video/mp4" />
@@ -59,12 +82,14 @@ export default function Home() {
       {/* Section 4: What I Create */}
       <section className="pillars-section pillars-section--video">
         <video
+          ref={section4VideoRef}
           className="pillars-bg-video"
           src="/section4_bg.mp4"
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
         />
         <div className="pillars-video-overlay" />
         <div className="section-container" style={{ position: 'relative', zIndex: 2 }}>
