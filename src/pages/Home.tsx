@@ -68,7 +68,6 @@ export default function Home() {
         />
         <div className="pillars-video-overlay" />
         <div className="section-container" style={{ position: 'relative', zIndex: 2 }}>
-          <h2 className="section-title">What I Create</h2>
           <div className="pillars-grid">
             <div className="pillar">
               <h3 className="pillar-title">Original Show Creation</h3>
