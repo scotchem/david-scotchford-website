@@ -157,7 +157,7 @@ nav .container {
 /* Scroll Indicator */
 .scroll-indicator {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
