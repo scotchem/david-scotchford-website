@@ -30,10 +30,9 @@ export default function Home() {
           <p className="hero-subtitle">Creative Content Creator & Consultant</p>
         </div>
         <div className={`scroll-indicator${scrolled ? ' scroll-indicator--hidden' : ''}`}>
-          <span className="scroll-label">Scroll</span>
           <div className="scroll-arrow">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 5v14M5 12l7 7 7-7" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 9l7 7 7-7" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
         </div>
