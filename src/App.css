@@ -2007,3 +2007,37 @@ footer p {
     height: 180px;
   }
 }
+
+/* Resume contact line */
+.resume-credits-summary {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(245, 241, 237, 0.75);
+  font-style: italic;
+}
+
+.resume-contact-line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(139, 125, 107, 0.2);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(245, 241, 237, 0.6);
+}
+
+.resume-contact-dot {
+  color: var(--accent-gold);
+}
+
+.resume-contact-link {
+  color: var(--accent-gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resume-contact-link:hover {
+  color: var(--warm-white);
+}
