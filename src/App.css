@@ -492,6 +492,33 @@ footer p {
   background: var(--dark-bg);
 }
 
+.pillars-section--video {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.pillars-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.pillars-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 10, 0.72);
+  z-index: 1;
+}
+
 .section-title {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;

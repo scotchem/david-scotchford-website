@@ -57,8 +57,17 @@ export default function Home() {
       </section>
 
       {/* Section 4: What I Create */}
-      <section className="pillars-section">
-        <div className="section-container">
+      <section className="pillars-section pillars-section--video">
+        <video
+          className="pillars-bg-video"
+          src="/section4_bg.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <div className="pillars-video-overlay" />
+        <div className="section-container" style={{ position: 'relative', zIndex: 2 }}>
           <h2 className="section-title">What I Create</h2>
           <div className="pillars-grid">
             <div className="pillar">
