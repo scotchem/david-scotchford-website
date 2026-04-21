@@ -1,10 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
-    // Scroll event listener for future animations
     const handleScroll = () => {
-      // Can be used for scroll-triggered animations
+      setScrolled(window.scrollY > 80);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -27,6 +28,14 @@ export default function Home() {
         <div className="hero-content">
           <h1 className="hero-title">David Scotchford</h1>
           <p className="hero-subtitle">Creative Content Creator & Consultant</p>
+        </div>
+        <div className={`scroll-indicator${scrolled ? ' scroll-indicator--hidden' : ''}`}>
+          <span className="scroll-label">Scroll</span>
+          <div className="scroll-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 5v14M5 12l7 7 7-7" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
         </div>
       </section>
 
