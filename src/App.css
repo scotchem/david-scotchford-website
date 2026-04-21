@@ -532,8 +532,9 @@ footer p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .pillar {
@@ -574,7 +575,7 @@ footer p {
   font-size: 1.125rem;
   line-height: 1.8;
   color: rgba(245, 241, 237, 0.8);
-  max-width: 900px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
