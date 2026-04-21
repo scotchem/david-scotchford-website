@@ -51,7 +51,7 @@ export default function Home() {
       <section className="philosophy-section">
         <div className="section-container">
           <p className="philosophy-text">
-            At the heart of David Scotchford's work is a belief that live entertainment should do more than impress — it should transport. Drawing on experience across theatrical, cruise, and large-scale production environments, he is drawn to work that moves fluidly between spectacle and intimacy, with a focus on creating experiences that are immersive, dynamic, and made to be felt as much as seen.
+            Live entertainment should do more than impress — it should transport. Drawing on experience across theatrical, cruise, and large-scale production environments, we create experiences that are vivid, immersive, and designed to be felt as much as seen.
           </p>
         </div>
       </section>
