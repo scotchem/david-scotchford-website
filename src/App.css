@@ -1318,8 +1318,9 @@ footer p {
 }
 
 .video-card-img--contain {
-  object-fit: cover;
-  object-position: center 30%;
+  object-fit: contain;
+  object-position: center center;
+  background: #0a0a0a;
 }
 
 .video-card:hover .video-card-img--contain {
