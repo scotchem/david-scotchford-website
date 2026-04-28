@@ -25,6 +25,10 @@ const videos: VideoItem[] = [
       'A curated selection of choreography and creative direction work across Broadway, cruise, and theatrical productions. Available for industry professionals upon request.',
     thumbnail: '/still_silhouette_hero.png',
     year: '2024',
+    clips: [
+      { id: '315517275', label: 'Featured Reel' },
+      { id: '374811280', label: 'Extended Reel' },
+    ],
   },
   {
     id: 2,
