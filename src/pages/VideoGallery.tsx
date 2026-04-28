@@ -34,9 +34,9 @@ const videos: VideoItem[] = [
     thumbnail: '/still_pascal_mia.png',
     year: 'In Development',
     clips: [
-      { id: '1156632794', label: 'Clip 1' },
-      { id: '1156910196', label: 'Clip 2' },
-      { id: '1156910168', label: 'Clip 3' },
+      { id: '1156632794', label: 'In Tandem — Clip 1' },
+      { id: '1156910168', label: 'In Tandem — Clip 2' },
+      { id: '1156910196', label: 'In Tandem — Clip 3' },
     ],
   },
   {
@@ -78,21 +78,31 @@ const videos: VideoItem[] = [
 ];
 
 export default function VideoGallery() {
-  const [expandedId, setExpandedId] = useState<number | null>(null);
-  const [playingClip, setPlayingClip] = useState<string | null>(null);
+  const [modalVideo, setModalVideo] = useState<VideoItem | null>(null);
+  const [activeClip, setActiveClip] = useState<VimeoClip | null>(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const toggleExpand = (video: VideoItem) => {
-    if (expandedId === video.id) {
-      setExpandedId(null);
-      setPlayingClip(null);
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    if (modalVideo) {
+      document.body.style.overflow = 'hidden';
     } else {
-      setExpandedId(video.id);
-      setPlayingClip(null);
+      document.body.style.overflow = '';
     }
+    return () => { document.body.style.overflow = ''; };
+  }, [modalVideo]);
+
+  const openModal = (video: VideoItem) => {
+    setModalVideo(video);
+    setActiveClip(video.clips ? video.clips[0] : null);
+  };
+
+  const closeModal = () => {
+    setModalVideo(null);
+    setActiveClip(null);
   };
 
   return (
@@ -116,102 +126,36 @@ export default function VideoGallery() {
       {/* Grid */}
       <section className="video-grid-section">
         <div className="video-grid-container">
-          <div className="video-grid-with-panels">
+          <div className="video-grid">
             {videos.map((video) => (
-              <div key={video.id} className="video-grid-item-wrap">
-                {/* Card */}
-                <div
-                  className={`video-card${video.clips ? ' video-card--has-clips' : ''}${expandedId === video.id ? ' video-card--expanded' : ''}`}
-                  onClick={() => video.clips && toggleExpand(video)}
-                >
-                  <div className="video-card-thumb">
-                    <img
-                      src={video.thumbnail}
-                      alt={video.title}
-                      className="video-card-img"
-                    />
-                    <div className="video-card-img-overlay" />
-                    <div className="video-card-category">{video.category}</div>
-                    {video.clips && (
-                      <div className="video-card-play-badge">
-                        <span>{expandedId === video.id ? '✕' : '▶'}</span>
-                      </div>
-                    )}
+              <div key={video.id} className="video-card">
+                <div className="video-card-thumb">
+                  <img
+                    src={video.thumbnail}
+                    alt={video.title}
+                    className="video-card-img"
+                  />
+                  <div className="video-card-img-overlay" />
+                  <div className="video-card-category">{video.category}</div>
+                </div>
+                <div className="video-card-body">
+                  <div className="video-card-header">
+                    <h3 className="video-card-title">{video.title}</h3>
+                    <span className="video-card-year">{video.year}</span>
                   </div>
-                  <div className="video-card-body">
-                    <div className="video-card-header">
-                      <h3 className="video-card-title">{video.title}</h3>
-                      <span className="video-card-year">{video.year}</span>
-                    </div>
-                    <p className="video-card-desc">{video.description}</p>
-                    {video.clips && (
-                      <p className="video-card-clips-hint">
-                        {expandedId === video.id ? 'Click to collapse' : `▶  ${video.clips.length} videos — click to watch`}
-                      </p>
-                    )}
-                  </div>
+                  <p className="video-card-desc">{video.description}</p>
+                  {video.clips && (
+                    <button
+                      className="video-card-watch-btn"
+                      onClick={() => openModal(video)}
+                    >
+                      <span className="video-card-watch-icon">▶</span>
+                      Watch
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
-
-            {/* Expand Panel — spans full width, inserted after the row containing In Tandem */}
-            {expandedId !== null && (() => {
-              const video = videos.find(v => v.id === expandedId);
-              if (!video?.clips) return null;
-              return (
-                <div className="video-expand-panel">
-                  <div className="video-expand-header">
-                    <div>
-                      <p className="video-expand-eyebrow">{video.category}</p>
-                      <h3 className="video-expand-title">{video.title}</h3>
-                    </div>
-                    <button
-                      className="video-expand-close"
-                      onClick={() => { setExpandedId(null); setPlayingClip(null); }}
-                    >
-                      ✕ Close
-                    </button>
-                  </div>
-                  <div className="video-expand-clips">
-                    {video.clips.map((clip, i) => (
-                      <div key={clip.id} className="video-expand-clip">
-                        {playingClip === clip.id ? (
-                          <div className="video-expand-player-wrap">
-                            <iframe
-                              src={`https://player.vimeo.com/video/${clip.id}?autoplay=1&color=a89968&title=0&byline=0&portrait=0`}
-                              className="video-expand-iframe"
-                              allow="autoplay; fullscreen; picture-in-picture"
-                              allowFullScreen
-                              title={clip.label}
-                            />
-                          </div>
-                        ) : (
-                          <div
-                            className="video-expand-thumb"
-                            onClick={() => setPlayingClip(clip.id)}
-                          >
-                            <img
-                              src={`https://vumbnail.com/${clip.id}.jpg`}
-                              alt={clip.label}
-                              className="video-expand-thumb-img"
-                              onError={(e) => {
-                                (e.target as HTMLImageElement).src = video.thumbnail;
-                              }}
-                            />
-                            <div className="video-expand-thumb-overlay" />
-                            <div className="video-expand-play-btn">▶</div>
-                          </div>
-                        )}
-                        <p className="video-expand-clip-label">
-                          <span className="video-expand-clip-num">{i + 1}</span>
-                          {clip.label}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              );
-            })()}
           </div>
         </div>
       </section>
@@ -246,6 +190,53 @@ export default function VideoGallery() {
           <p>&copy; 2025 David Scotchford. All rights reserved.</p>
         </div>
       </footer>
+
+      {/* Video Modal */}
+      {modalVideo && (
+        <div className="vmodal-backdrop" onClick={closeModal}>
+          <div className="vmodal" onClick={(e) => e.stopPropagation()}>
+            {/* Close */}
+            <button className="vmodal-close" onClick={closeModal} aria-label="Close">✕</button>
+
+            {/* Header */}
+            <div className="vmodal-header">
+              <p className="vmodal-eyebrow">{modalVideo.category}</p>
+              <h2 className="vmodal-title">{modalVideo.title}</h2>
+            </div>
+
+            {/* Active Player */}
+            {activeClip && (
+              <div className="vmodal-player-wrap">
+                <iframe
+                  key={activeClip.id}
+                  src={`https://player.vimeo.com/video/${activeClip.id}?autoplay=1&color=a89968&title=0&byline=0&portrait=0`}
+                  className="vmodal-iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title={activeClip.label}
+                />
+              </div>
+            )}
+
+            {/* Clip Selector */}
+            {modalVideo.clips && modalVideo.clips.length > 1 && (
+              <div className="vmodal-clips">
+                {modalVideo.clips.map((clip, i) => (
+                  <button
+                    key={clip.id}
+                    className={`vmodal-clip-btn${activeClip?.id === clip.id ? ' vmodal-clip-btn--active' : ''}`}
+                    onClick={() => setActiveClip(clip)}
+                  >
+                    <span className="vmodal-clip-num">{i + 1}</span>
+                    <span className="vmodal-clip-label">{clip.label}</span>
+                    {activeClip?.id === clip.id && <span className="vmodal-clip-playing">▶ Playing</span>}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
