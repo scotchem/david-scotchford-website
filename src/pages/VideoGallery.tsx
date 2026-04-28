@@ -78,7 +78,7 @@ const videos: VideoItem[] = [
     category: 'Theatrical',
     description:
       'Choreography for national tour and regional productions — capturing the raw energy and iconic movement of the original.',
-    thumbnail: '/still_alex_flip.jpg',
+    thumbnail: '/still_dirty_dancing.jpg',
     year: 'Various',
   },
   // Row 3
