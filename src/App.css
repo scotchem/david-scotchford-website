@@ -1317,6 +1317,15 @@ footer p {
   transform: scale(1.05);
 }
 
+.video-card-img--contain {
+  object-fit: contain;
+  background: #0a0a0a;
+}
+
+.video-card:hover .video-card-img--contain {
+  transform: scale(1.03);
+}
+
 .video-card-img-overlay {
   position: absolute;
   inset: 0;
