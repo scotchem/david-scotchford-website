@@ -193,24 +193,7 @@ export default function VideoGallery() {
         </div>
       </section>
 
-      {/* Reel CTA */}
-      <section className="video-reel-section">
-        <div className="video-reel-inner">
-          <p className="video-reel-label">Choreography Reel</p>
-          <h2 className="video-reel-title">Full Reel Available Upon Request</h2>
-          <p className="video-reel-text">
-            A complete choreography reel showcasing the full range of David's work across
-            Broadway, cruise, and theatrical productions is available for industry professionals.
-          </p>
-          <a
-            href="mailto:david@davidscotchford.com"
-            className="cta-button"
-            style={{ display: 'inline-block', textDecoration: 'none' }}
-          >
-            Request Reel →
-          </a>
-        </div>
-      </section>
+
 
       {/* Footer */}
       <footer>
