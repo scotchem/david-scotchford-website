@@ -40,20 +40,11 @@ const videos: VideoItem[] = [
     ],
   },
   {
-    id: 3,
-    title: 'Dirty Dancing',
-    category: 'Theatrical',
-    description:
-      'Choreography for national tour and regional productions — capturing the raw energy and iconic movement of the original.',
-    thumbnail: '/still_alex_flip.jpg',
-    year: 'Various',
-  },
-  {
     id: 4,
     title: 'The Music Man',
     category: 'Broadway',
     description:
-      'Associate choreographer to Tony Award–winning choreographer Warren Carlyle on the acclaimed Broadway revival.',
+      'Associate choreographer to Tony Award\u2013winning choreographer Warren Carlyle on the acclaimed Broadway revival.',
     thumbnail: '/still_music_man.png',
     year: '2022',
   },
@@ -73,6 +64,15 @@ const videos: VideoItem[] = [
     description:
       'Behind the work — the rehearsal room, the development process, and the collaborative creative environment where productions are built.',
     thumbnail: '/still_teaching_tango.jpg',
+    year: 'Various',
+  },
+  {
+    id: 3,
+    title: 'Dirty Dancing',
+    category: 'Theatrical',
+    description:
+      'Choreography for national tour and regional productions — capturing the raw energy and iconic movement of the original.',
+    thumbnail: '/still_alex_flip.jpg',
     year: 'Various',
   },
 ];
