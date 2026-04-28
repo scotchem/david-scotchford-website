@@ -76,7 +76,7 @@ export default function VideoGallery() {
       {/* Hero */}
       <section className="video-hero">
         <div className="video-hero-bg">
-          <img src="/still_sandra_split.jpg" alt="" className="video-hero-img" />
+          <img src="/still_silhouette_hero.png" alt="" className="video-hero-img" />
           <div className="video-hero-overlay" />
         </div>
         <div className="video-hero-content">
