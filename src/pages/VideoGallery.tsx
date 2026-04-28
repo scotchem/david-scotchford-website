@@ -16,8 +16,18 @@ interface VideoItem {
 }
 
 const videos: VideoItem[] = [
+  // Row 1
   {
     id: 1,
+    title: 'Choreography Reel',
+    category: 'Reel',
+    description:
+      'A curated selection of choreography and creative direction work across Broadway, cruise, and theatrical productions. Available for industry professionals upon request.',
+    thumbnail: '/still_silhouette_hero.png',
+    year: '2024',
+  },
+  {
+    id: 2,
     title: 'From Miami With Love',
     category: 'Original Concept',
     description:
@@ -26,7 +36,17 @@ const videos: VideoItem[] = [
     year: 'In Development',
   },
   {
-    id: 2,
+    id: 3,
+    title: 'Fly Right',
+    category: 'Original Concept',
+    description:
+      'A new original concept currently in development.',
+    thumbnail: '/still_david_flip.png',
+    year: 'In Development',
+  },
+  // Row 2
+  {
+    id: 4,
     title: 'In Tandem',
     category: 'Original Concept',
     description:
@@ -40,40 +60,41 @@ const videos: VideoItem[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: 'The Music Man',
     category: 'Broadway',
     description:
-      'Associate choreographer to Tony Award\u2013winning choreographer Warren Carlyle on the acclaimed Broadway revival.',
+      'Associate choreographer to Tony Award–winning choreographer Warren Carlyle on the acclaimed Broadway revival.',
     thumbnail: '/still_music_man.png',
     year: '2022',
   },
   {
-    id: 5,
-    title: 'Selected Cruise Entertainment',
-    category: 'Cruise',
-    description:
-      'Large-scale production choreography and creative direction for Celebrity Cruises and Norwegian Cruise Line — shaping premium entertainment experiences at sea.',
-    thumbnail: '/still_performance1.jpg',
-    year: 'Ongoing',
-  },
-  {
     id: 6,
-    title: 'Rehearsal & Development',
-    category: 'Process',
-    description:
-      'Behind the work — the rehearsal room, the development process, and the collaborative creative environment where productions are built.',
-    thumbnail: '/still_teaching_tango.jpg',
-    year: 'Various',
-  },
-  {
-    id: 3,
     title: 'Dirty Dancing',
     category: 'Theatrical',
     description:
       'Choreography for national tour and regional productions — capturing the raw energy and iconic movement of the original.',
     thumbnail: '/still_alex_flip.jpg',
     year: 'Various',
+  },
+  // Row 3
+  {
+    id: 7,
+    title: 'In Development',
+    category: 'Coming Soon',
+    description:
+      'A new production currently in development. Details to be announced.',
+    thumbnail: '/still_performance1.jpg',
+    year: 'Coming Soon',
+  },
+  {
+    id: 8,
+    title: 'Class Work',
+    category: 'Teaching',
+    description:
+      'Guest teaching at Steps On Broadway and Broadway Dance Center — Jazz and Theater Jazz.',
+    thumbnail: '/still_teaching_tango.jpg',
+    year: 'Ongoing',
   },
 ];
 
