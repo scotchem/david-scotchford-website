@@ -99,6 +99,10 @@ const videos: VideoItem[] = [
       'Guest teaching at Steps On Broadway and Broadway Dance Center — Jazz and Theater Jazz.',
     thumbnail: '/still_teaching_tango.jpg',
     year: 'Ongoing',
+    clips: [
+      { id: '136342738', label: 'Hernando\'s Hideaway' },
+      { id: '78206052', label: 'Dance At The Gym' },
+    ],
   },
 ];
 
