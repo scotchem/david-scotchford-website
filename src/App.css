@@ -1224,8 +1224,9 @@ footer p {
 .video-hero-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 15%;
+  object-fit: contain;
+  object-position: center top;
+  background: #0a0a0a;
 }
 
 .video-hero-overlay {
