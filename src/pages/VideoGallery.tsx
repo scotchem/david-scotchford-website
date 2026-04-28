@@ -166,7 +166,7 @@ export default function VideoGallery() {
                   <img
                     src={video.thumbnail}
                     alt={video.title}
-                    className={`video-card-img${video.id === 3 ? ' video-card-img--contain' : ''}`}
+                    className={`video-card-img${video.id === 3 ? ' video-card-img--contain' : ''}${video.id === 7 ? ' video-card-img--top' : ''}`}
                   />
                   <div className="video-card-img-overlay" />
                   <div className="video-card-category">{video.category}</div>

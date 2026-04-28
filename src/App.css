@@ -1326,6 +1326,10 @@ footer p {
   transform: scale(1.03);
 }
 
+.video-card-img--top {
+  object-position: center 15%;
+}
+
 .video-card-img-overlay {
   position: absolute;
   inset: 0;
