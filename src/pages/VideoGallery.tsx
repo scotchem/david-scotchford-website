@@ -88,7 +88,7 @@ const videos: VideoItem[] = [
     category: 'Coming Soon',
     description:
       'A new production currently in development. Details to be announced.',
-    thumbnail: '/still_performance1.jpg',
+    thumbnail: '/still_in_development.jpg',
     year: 'Coming Soon',
     clips: [
       { id: '63744328', label: 'Wonderful Town' },
