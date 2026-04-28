@@ -90,6 +90,10 @@ const videos: VideoItem[] = [
       'A new production currently in development. Details to be announced.',
     thumbnail: '/still_performance1.jpg',
     year: 'Coming Soon',
+    clips: [
+      { id: '63744328', label: 'Wonderful Town' },
+      { id: '63575805', label: 'Say It To Me Now' },
+    ],
   },
   {
     id: 8,
