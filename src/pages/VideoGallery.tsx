@@ -55,7 +55,7 @@ const videos: VideoItem[] = [
     category: 'Original Concept',
     description:
       'An intimate pas de deux exploring the dialogue between two performers in motion — the push and pull, the surrender and the lead.',
-    thumbnail: '/still_pascal_mia.png',
+    thumbnail: '/still_in_tandem.jpg',
     year: 'In Development',
     clips: [
       { id: '1156632794', label: 'Besamé Mucho' },
