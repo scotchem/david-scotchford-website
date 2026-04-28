@@ -85,11 +85,11 @@ const videos: VideoItem[] = [
   {
     id: 7,
     title: 'In Development',
-    category: 'Coming Soon',
+    category: 'In Development',
     description:
       'A new production currently in development. Details to be announced.',
     thumbnail: '/still_in_development.jpg',
-    year: 'Coming Soon',
+    year: '',
     clips: [
       { id: '63744328', label: 'Wonderful Town' },
       { id: '63575805', label: 'Say It To Me Now' },
@@ -98,7 +98,7 @@ const videos: VideoItem[] = [
   {
     id: 8,
     title: 'Class Work',
-    category: 'Teaching',
+    category: 'Class Work',
     description:
       'Guest teaching at Steps On Broadway and Broadway Dance Center — Jazz and Theater Jazz.',
     thumbnail: '/still_teaching_tango.jpg',
@@ -169,12 +169,12 @@ export default function VideoGallery() {
                     className={`video-card-img${video.id === 3 ? ' video-card-img--contain' : ''}${video.id === 7 ? ' video-card-img--top' : ''}`}
                   />
                   <div className="video-card-img-overlay" />
-                  <div className="video-card-category">{video.category}</div>
+                  {video.id !== 7 && video.id !== 8 && <div className="video-card-category">{video.category}</div>}
                 </div>
                 <div className="video-card-body">
                   <div className="video-card-header">
                     <h3 className="video-card-title">{video.title}</h3>
-                    <span className="video-card-year">{video.year}</span>
+                    {video.year && <span className="video-card-year">{video.year}</span>}
                   </div>
                   <p className="video-card-desc">{video.description}</p>
                   {video.clips && (
