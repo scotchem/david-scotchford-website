@@ -45,7 +45,7 @@ const videos: VideoItem[] = [
     category: 'Original Concept',
     description:
       'A new original concept currently in development.',
-    thumbnail: '/still_david_flip.png',
+    thumbnail: '/still_fly_right.png',
     year: 'In Development',
   },
   // Row 2
