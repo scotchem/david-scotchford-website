@@ -36,7 +36,7 @@ const videos: VideoItem[] = [
     category: 'Original Concept',
     description:
       'A full-length original production concept blending Latin, jazz, and contemporary movement — capturing the heat, romance, and spectacle of Miami\'s cultural landscape.',
-    thumbnail: '/fmwl_poster.jpg',
+    thumbnail: '/still_fmwl.jpg',
     year: 'In Development',
   },
   {
@@ -166,7 +166,7 @@ export default function VideoGallery() {
                   <img
                     src={video.thumbnail}
                     alt={video.title}
-                    className={`video-card-img${video.id === 3 ? ' video-card-img--contain' : ''}${video.id === 7 ? ' video-card-img--top' : ''}`}
+                    className={`video-card-img${video.id === 2 || video.id === 3 ? ' video-card-img--contain' : ''}${video.id === 7 ? ' video-card-img--top' : ''}`}
                   />
                   <div className="video-card-img-overlay" />
                   <div className="video-card-category">{video.category}</div>
