@@ -2043,3 +2043,204 @@ footer p {
 .resume-contact-link:hover {
   color: var(--warm-white);
 }
+
+/* ============================================================
+   VIDEO CARD — WATCH BUTTON
+   ============================================================ */
+
+.video-card-watch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  background: none;
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.video-card-watch-btn:hover {
+  background: var(--accent-gold);
+  color: var(--dark-bg);
+}
+
+.video-card-watch-icon {
+  font-size: 0.65rem;
+}
+
+/* ============================================================
+   VIDEO MODAL / LIGHTBOX
+   ============================================================ */
+
+.vmodal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  backdrop-filter: blur(6px);
+  animation: vmodal-fade-in 0.25s ease;
+}
+
+@keyframes vmodal-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.vmodal {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  background: var(--dark-secondary);
+  border: 1px solid rgba(139, 125, 107, 0.25);
+  padding: 2.5rem;
+  animation: vmodal-slide-up 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@keyframes vmodal-slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.vmodal-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  color: rgba(245, 241, 237, 0.5);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  line-height: 1;
+  padding: 0.25rem;
+}
+
+.vmodal-close:hover {
+  color: var(--warm-white);
+}
+
+.vmodal-header {
+  margin-bottom: 1.5rem;
+}
+
+.vmodal-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+}
+
+.vmodal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: var(--warm-white);
+  font-weight: 600;
+}
+
+.vmodal-player-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  margin-bottom: 1.5rem;
+}
+
+.vmodal-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.vmodal-clips {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid rgba(139, 125, 107, 0.2);
+  padding-top: 1.25rem;
+}
+
+.vmodal-clip-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: none;
+  border: 1px solid rgba(139, 125, 107, 0.2);
+  color: rgba(245, 241, 237, 0.7);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.vmodal-clip-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--warm-white);
+  background: rgba(168, 153, 104, 0.06);
+}
+
+.vmodal-clip-btn--active {
+  border-color: var(--accent-gold);
+  color: var(--warm-white);
+  background: rgba(168, 153, 104, 0.08);
+}
+
+.vmodal-clip-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid rgba(139, 125, 107, 0.4);
+  font-size: 0.75rem;
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+.vmodal-clip-btn--active .vmodal-clip-num {
+  background: var(--accent-gold);
+  color: var(--dark-bg);
+  border-color: var(--accent-gold);
+}
+
+.vmodal-clip-label {
+  flex: 1;
+}
+
+.vmodal-clip-playing {
+  font-size: 0.7rem;
+  color: var(--accent-gold);
+  letter-spacing: 0.05em;
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .vmodal {
+    padding: 1.5rem;
+  }
+
+  .vmodal-title {
+    font-size: 1.35rem;
+  }
+}

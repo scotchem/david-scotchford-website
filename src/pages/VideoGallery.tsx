@@ -1,4 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
+interface VimeoClip {
+  id: string;
+  label: string;
+}
 
 interface VideoItem {
   id: number;
@@ -7,6 +12,7 @@ interface VideoItem {
   description: string;
   thumbnail: string;
   year: string;
+  clips?: VimeoClip[];
 }
 
 const videos: VideoItem[] = [
@@ -27,6 +33,11 @@ const videos: VideoItem[] = [
       'An intimate pas de deux exploring the dialogue between two performers in motion — the push and pull, the surrender and the lead.',
     thumbnail: '/still_pascal_mia.png',
     year: 'In Development',
+    clips: [
+      { id: '1156632794', label: 'In Tandem — Clip 1' },
+      { id: '1156910196', label: 'In Tandem — Clip 2' },
+      { id: '1156910168', label: 'In Tandem — Clip 3' },
+    ],
   },
   {
     id: 3,
@@ -67,9 +78,32 @@ const videos: VideoItem[] = [
 ];
 
 export default function VideoGallery() {
+  const [modalVideo, setModalVideo] = useState<VideoItem | null>(null);
+  const [activeClip, setActiveClip] = useState<VimeoClip | null>(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    if (modalVideo) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [modalVideo]);
+
+  const openModal = (video: VideoItem) => {
+    setModalVideo(video);
+    setActiveClip(video.clips ? video.clips[0] : null);
+  };
+
+  const closeModal = () => {
+    setModalVideo(null);
+    setActiveClip(null);
+  };
 
   return (
     <div className="video-page">
@@ -110,6 +144,15 @@ export default function VideoGallery() {
                     <span className="video-card-year">{video.year}</span>
                   </div>
                   <p className="video-card-desc">{video.description}</p>
+                  {video.clips && (
+                    <button
+                      className="video-card-watch-btn"
+                      onClick={() => openModal(video)}
+                    >
+                      <span className="video-card-watch-icon">▶</span>
+                      Watch
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
@@ -147,6 +190,53 @@ export default function VideoGallery() {
           <p>&copy; 2025 David Scotchford. All rights reserved.</p>
         </div>
       </footer>
+
+      {/* Video Modal */}
+      {modalVideo && (
+        <div className="vmodal-backdrop" onClick={closeModal}>
+          <div className="vmodal" onClick={(e) => e.stopPropagation()}>
+            {/* Close */}
+            <button className="vmodal-close" onClick={closeModal} aria-label="Close">✕</button>
+
+            {/* Header */}
+            <div className="vmodal-header">
+              <p className="vmodal-eyebrow">{modalVideo.category}</p>
+              <h2 className="vmodal-title">{modalVideo.title}</h2>
+            </div>
+
+            {/* Active Player */}
+            {activeClip && (
+              <div className="vmodal-player-wrap">
+                <iframe
+                  key={activeClip.id}
+                  src={`https://player.vimeo.com/video/${activeClip.id}?autoplay=1&color=a89968&title=0&byline=0&portrait=0`}
+                  className="vmodal-iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title={activeClip.label}
+                />
+              </div>
+            )}
+
+            {/* Clip Selector */}
+            {modalVideo.clips && modalVideo.clips.length > 1 && (
+              <div className="vmodal-clips">
+                {modalVideo.clips.map((clip, i) => (
+                  <button
+                    key={clip.id}
+                    className={`vmodal-clip-btn${activeClip?.id === clip.id ? ' vmodal-clip-btn--active' : ''}`}
+                    onClick={() => setActiveClip(clip)}
+                  >
+                    <span className="vmodal-clip-num">{i + 1}</span>
+                    <span className="vmodal-clip-label">{clip.label}</span>
+                    {activeClip?.id === clip.id && <span className="vmodal-clip-playing">▶ Playing</span>}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
