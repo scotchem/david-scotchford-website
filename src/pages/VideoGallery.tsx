@@ -34,9 +34,9 @@ const videos: VideoItem[] = [
     thumbnail: '/still_pascal_mia.png',
     year: 'In Development',
     clips: [
-      { id: '1156632794', label: 'In Tandem — Clip 1' },
-      { id: '1156910168', label: 'In Tandem — Clip 2' },
-      { id: '1156910196', label: 'In Tandem — Clip 3' },
+      { id: '1156632794', label: 'Besamé Mucho' },
+      { id: '1156910168', label: 'Let\'s Get Loud' },
+      { id: '1156910196', label: 'She Bangs' },
     ],
   },
   {
