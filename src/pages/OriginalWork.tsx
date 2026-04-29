@@ -137,10 +137,7 @@ export default function OriginalWork() {
         <div className="ow-hero-content">
           <p className="ow-hero-eyebrow">Original Work</p>
           <h1 className="ow-hero-title">Worlds Built<br />From the Inside Out</h1>
-          <p className="ow-hero-sub">
-            These are not shows for hire. They are authored worlds — each one conceived, developed, and shaped as a complete creative vision.
-          </p>
-          <p className="ow-hero-sub" style={{marginTop: '1rem', maxWidth: '640px'}}>
+          <p className="ow-hero-sub" style={{maxWidth: '640px'}}>
             A collection of original entertainment concepts conceived and developed as complete creative worlds — each with its own perspective, musical language, movement identity, and enveloping atmosphere.
           </p>
         </div>
