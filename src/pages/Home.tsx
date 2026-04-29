@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 
-export default function Home() {
+interface HomeProps {
+  setCurrentPage?: (page: string) => void;
+}
+
+export default function Home({ setCurrentPage }: HomeProps) {
   const [scrolled, setScrolled] = useState(false);
   const heroVideoRef = useRef<HTMLVideoElement>(null);
   const section4VideoRef = useRef<HTMLVideoElement>(null);
@@ -50,7 +54,7 @@ export default function Home() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1 className="hero-title">David Scotchford</h1>
-          <p className="hero-subtitle">Creative Content Creator & Consultant</p>
+          <p className="hero-subtitle">Choreographer · Director · Original Content Creator</p>
         </div>
         <div className={`scroll-indicator${scrolled ? ' scroll-indicator--hidden' : ''}`}>
           <div className="scroll-arrow">
@@ -133,7 +137,7 @@ export default function Home() {
               <p className="featured-description">
                 An original entertainment concept that captures the vibrant energy, romance, and spectacle of Miami's cultural landscape. This signature world blends choreography, music, and visual storytelling to create an immersive experience that celebrates movement, passion, and the electric spirit of the city.
               </p>
-              <a href="#concepts" className="featured-link">Explore Concepts →</a>
+              <button className="featured-link" onClick={() => setCurrentPage && setCurrentPage('originalwork')}>Explore Concepts →</button>
             </div>
           </div>
         </div>
@@ -177,7 +181,7 @@ export default function Home() {
           <p className="closing-text">
             Whether developing an original concept, shaping a new production, or refining an existing work, David Scotchford brings a cinematic eye, choreographic intelligence, and a deep understanding of audience experience to the creation of premium live entertainment.
           </p>
-          <a href="#contact" className="cta-button">Start a Conversation</a>
+          <button className="cta-button" onClick={() => setCurrentPage && setCurrentPage('contact')}>Start a Conversation</button>
         </div>
       </section>
     </div>

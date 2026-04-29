@@ -15,7 +15,7 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
-        return <Home />;
+        return <Home setCurrentPage={(page: string) => setCurrentPage(page as Page)} />;
       case 'video':
         return <VideoGallery />;
       case 'originalwork':
@@ -25,7 +25,7 @@ function App() {
       case 'contact':
         return <Contact setCurrentPage={(page: string) => setCurrentPage(page as Page)} />;
       default:
-        return <Home />;
+        return <Home setCurrentPage={(page: string) => setCurrentPage(page as Page)} />;
     }
   };
 
