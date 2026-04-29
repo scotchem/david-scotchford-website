@@ -406,6 +406,11 @@ footer p {
   color: var(--warm-white);
 }
 
+.social-links a[title="Email"] {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-content h1 {
