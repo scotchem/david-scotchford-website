@@ -34,7 +34,7 @@ const concepts: Concept[] = [
   {
     id: 2,
     title: 'Fly Right',
-    tagline: 'Rhythm. Risk. Improvisation. Fly high into the night.',
+    tagline: 'Rhythm. Risk. Improvisation. Fly high into the sound.',
     label: 'Original Concept · Experiential Club-Theatre',
     accentColor: '#c0392b',
     image: '/fly_right_poster_ow.png',
