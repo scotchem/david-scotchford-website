@@ -164,19 +164,6 @@ export default function OriginalWork() {
         ))}
       </section>
 
-      {/* Coming Soon */}
-      <section className="ow-coming-soon">
-        <div className="ow-coming-inner">
-          <div className="ow-coming-line" />
-          <p className="ow-coming-label">In Development</p>
-          <h3 className="ow-coming-title">A Third Concept is Coming</h3>
-          <p className="ow-coming-text">
-            A new original production is currently in development. Details to follow.
-          </p>
-          <div className="ow-coming-line" />
-        </div>
-      </section>
-
       {/* Footer */}
       <footer>
         <div className="container">
