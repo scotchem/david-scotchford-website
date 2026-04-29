@@ -90,8 +90,8 @@ export default function Contact({ setCurrentPage: _setCurrentPage }: ContactProp
             </div>
             <div className="contact-info-block">
               <p className="contact-info-label">Email</p>
-              <a href="mailto:david@davidscotchford.com" className="contact-info-link">
-                david@davidscotchford.com
+              <a href="mailto:scotchem@gmail.com" className="contact-info-link">
+                scotchem@gmail.com
               </a>
             </div>
             <div className="contact-info-image-wrap">
