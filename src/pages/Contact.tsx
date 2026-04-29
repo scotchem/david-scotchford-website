@@ -1,12 +1,29 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface ContactProps {
   setCurrentPage?: (page: string) => void;
 }
 
 export default function Contact({ setCurrentPage: _setCurrentPage }: ContactProps) {
+  const mosaicRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, []);
+
+  // Parallax: each mosaic image moves at a slightly different rate as the hero scrolls
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!mosaicRef.current) return;
+      const scrollY = window.scrollY;
+      const cells = mosaicRef.current.querySelectorAll<HTMLImageElement>('.contact-mosaic-img');
+      const speeds = [0.06, 0.10, 0.07, 0.12, 0.08, 0.11];
+      cells.forEach((img, i) => {
+        img.style.transform = `translateY(${scrollY * speeds[i]}px)`;
+      });
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const mosaicImages = [
@@ -22,7 +39,7 @@ export default function Contact({ setCurrentPage: _setCurrentPage }: ContactProp
     <div className="contact-page">
       {/* Hero with stills mosaic */}
       <section className="contact-hero">
-        <div className="contact-mosaic">
+        <div className="contact-mosaic" ref={mosaicRef}>
           {mosaicImages.map((img, i) => (
             <div key={i} className={`contact-mosaic-cell contact-mosaic-cell--${i + 1}`}>
               <img src={img.src} alt={img.alt} className="contact-mosaic-img" />

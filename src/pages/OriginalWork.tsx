@@ -74,7 +74,7 @@ function ConceptCard({ concept, index }: { concept: Concept; index: number }) {
   return (
     <div
       ref={cardRef}
-      className={`ow-concept-card ow-fade-in ${isEven ? 'ow-from-left' : 'ow-from-right'}`}
+      className={`ow-concept-card ow-fade-in ${isEven ? 'ow-from-left' : 'ow-from-right'} ${concept.id === 1 ? 'ow-concept-card--fmwl' : ''}`}
     >
       {/* Image Panel */}
       <div className={`ow-concept-image-wrap ${isEven ? '' : 'ow-order-last'}`}>
