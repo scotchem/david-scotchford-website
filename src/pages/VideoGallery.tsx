@@ -203,7 +203,7 @@ export default function VideoGallery() {
             <a href="https://www.instagram.com/d.scotch/" title="Instagram" target="_blank" rel="noopener noreferrer">@</a>
             <a href="mailto:scotchem@gmail.com" title="Email">✉</a>
           </div>
-          <p>&copy; 2025 David Scotchford. All rights reserved.</p>
+          <p>&copy; 2026 David Scotchford. All rights reserved.</p>
         </div>
       </footer>
 
