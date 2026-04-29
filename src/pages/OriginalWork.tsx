@@ -16,14 +16,14 @@ const concepts: Concept[] = [
   {
     id: 1,
     title: 'From Miami With Love',
-    tagline: 'Sun. Heat. Desire. A city that never stops moving.',
+    tagline: 'Heat. Rhythm. Romance. A city that awakens desire.',
     label: 'Original Concept · Cruise & Theatrical',
     accentColor: '#a89968',
     image: '/fmwl_poster.jpg',
     description:
-      'An original entertainment concept that captures the vibrant energy, romance, and spectacle of Miami\'s cultural landscape.',
+      'An original entertainment concept alive with the vivid energy, romance, and spectacle of Miami.',
     longDescription:
-      'From Miami With Love is a full-length original show concept blending choreography, music, and visual storytelling into an immersive world. Drawing from the heat of salsa, the cool of jazz, the pulse of the city\'s nightlife, and the romance of its coastline — this production is designed to transport audiences into a living, breathing Miami. Built for cruise, theatrical, and experiential performance environments, it represents the kind of authored, concept-driven entertainment that defines David Scotchford\'s approach to original show creation.',
+      'From Miami With Love is a full-length original show concept built around music, color, connection, and celebration. Salsa heat meets midnight cool. Nightlife pulses against ocean air. Romance, belonging, and the joy of living fully move through every moment. Created for cruise, theatrical, and experiential performance environments, the production invites audiences into a vibrant Miami world — sensual, cinematic, and alive.',
     details: [
       'Full-length original production concept',
       'Designed for cruise & theatrical environments',
