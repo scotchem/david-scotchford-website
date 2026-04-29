@@ -15,7 +15,7 @@ export default function Contact({ setCurrentPage: _setCurrentPage }: ContactProp
     { src: '/still_sandra_split.jpg', alt: 'Dance performance' },
     { src: '/contact_lift_silhouette.jpg', alt: 'Lift silhouette' },
     { src: '/contact_dirty_dancing_lift.jpg', alt: 'Dirty Dancing lift' },
-    { src: '/contact_carousel_ensemble.jpg', alt: 'Carousel ensemble' },
+    { src: '/contact_fmwl_poster.jpg', alt: 'From Miami With Love' },
   ];
 
   return (
