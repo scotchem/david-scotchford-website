@@ -2055,12 +2055,6 @@ footer p {
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: grayscale(30%) brightness(0.7);
-  transition: filter 0.4s ease;
-}
-
-.contact-strip-img:hover {
-  filter: grayscale(0%) brightness(0.85);
 }
 
 @media (max-width: 900px) {
