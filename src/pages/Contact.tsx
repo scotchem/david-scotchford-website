@@ -13,9 +13,9 @@ export default function Contact({ setCurrentPage: _setCurrentPage }: ContactProp
     { src: '/still_alex_flip.jpg', alt: 'Performance still' },
     { src: '/still_pascal_mia.png', alt: 'Lift performance' },
     { src: '/still_sandra_split.jpg', alt: 'Dance performance' },
-    { src: '/still_carousel.jpg', alt: 'Carousel production' },
-    { src: '/still_performance1.jpg', alt: 'Stage performance' },
-    { src: '/still_teaching_tango.jpg', alt: 'Rehearsal' },
+    { src: '/contact_lift_silhouette.jpg', alt: 'Lift silhouette' },
+    { src: '/contact_dirty_dancing_lift.jpg', alt: 'Dirty Dancing lift' },
+    { src: '/contact_carousel_ensemble.jpg', alt: 'Carousel ensemble' },
   ];
 
   return (
