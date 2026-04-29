@@ -155,7 +155,7 @@ export default function OriginalWork() {
       <section className="ow-intro">
         <div className="ow-intro-inner">
           <p className="ow-intro-text">
-            Every concept below began as a question: <em>What world do I want to create?</em> The answer shapes everything — the movement vocabulary, the music, the emotional arc, the visual language. These productions are designed to be experienced, not just watched.
+            Each show concept begins with what moves us as humans: relationship, belonging, and music that summons feeling beyond words. These works are not built simply to be watched, but to be entered, felt, and carried beyond the final moment.
           </p>
         </div>
       </section>
