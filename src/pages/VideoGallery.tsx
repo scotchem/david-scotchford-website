@@ -22,7 +22,7 @@ const videos: VideoItem[] = [
     title: 'Choreography Reel',
     category: 'Reel',
     description:
-      'A curated selection of choreography and creative direction work across Broadway, cruise, and theatrical productions. Available for industry professionals upon request.',
+      'Featuring a choreography reel and extended reel spanning cruise, international, and regional theatrical productions.',
     thumbnail: '/still_reel_hero.jpg',
     year: '2024',
     clips: [
@@ -35,7 +35,7 @@ const videos: VideoItem[] = [
     title: 'From Miami With Love',
     category: 'Original Concept',
     description:
-      'A full-length original production concept blending Latin, jazz, and contemporary movement — capturing the heat, romance, and spectacle of Miami\'s cultural landscape.',
+      'A full-length original production concept inspired by the rhythm, heat, and romance of Miami — a vivid celebration of belonging, connection, and living life to the fullest.',
     thumbnail: '/fmwl_poster.jpg',
     year: 'In Development',
   },
@@ -44,7 +44,7 @@ const videos: VideoItem[] = [
     title: 'Fly Right',
     category: 'Original Concept',
     description:
-      'A new original concept currently in development.',
+      'A fly-by-the-seat-of-your-pants ride into the roots of early jazz, where rhythm, risk, and improvisation reign supreme.',
     thumbnail: '/still_fly_right.png',
     year: 'In Development',
   },
@@ -54,7 +54,7 @@ const videos: VideoItem[] = [
     title: 'In Tandem',
     category: 'Original Concept',
     description:
-      'An intimate pas de deux exploring the dialogue between two performers in motion — the push and pull, the surrender and the lead.',
+      'A partner-driven dance production created for Step One Dance Company with RWS, exploring the interplay of movement, connection, and relationship aboard Holland America Line.',
     thumbnail: '/still_in_tandem.jpg',
     year: 'In Development',
     clips: [
@@ -68,16 +68,16 @@ const videos: VideoItem[] = [
     title: 'The Music Man',
     category: 'Broadway',
     description:
-      'Associate choreographer to Tony Award–winning choreographer Warren Carlyle on the acclaimed Broadway revival.',
+      'Assistant choreographer to Tony Award–winning choreographer Warren Carlyle on the acclaimed Broadway revival.',
     thumbnail: '/still_music_man.png',
     year: '2022',
   },
   {
     id: 6,
     title: 'Dirty Dancing',
-    category: 'Theatrical',
+    category: 'International Theatrical',
     description:
-      'Choreography for national tour and regional productions — capturing the raw energy and iconic movement of the original.',
+      'Choreography for International and US tour productions — Dirty Dancing is a smash hit in all theatrical markets.',
     thumbnail: '/still_dirty_dancing.jpg',
     year: 'Various',
   },
@@ -87,7 +87,7 @@ const videos: VideoItem[] = [
     title: 'In Development',
     category: 'In Development',
     description:
-      'A new production currently in development. Details to be announced.',
+      'Exploration of various dance styles and themes.',
     thumbnail: '/still_in_development.jpg',
     year: '',
     clips: [
@@ -100,7 +100,7 @@ const videos: VideoItem[] = [
     title: 'Class Work',
     category: 'Class Work',
     description:
-      'Guest teaching at Steps On Broadway and Broadway Dance Center — Jazz and Theater Jazz.',
+      'Excerpts from Int/Adv Theater classes. Previous guest teacher at Steps On Broadway and Broadway Dance Center NYC.',
     thumbnail: '/still_teaching_tango.jpg',
     year: 'Ongoing',
     clips: [
