@@ -140,6 +140,9 @@ export default function OriginalWork() {
           <p className="ow-hero-sub">
             These are not shows for hire. They are authored worlds — each one conceived, developed, and shaped as a complete creative vision.
           </p>
+          <p className="ow-hero-sub" style={{marginTop: '1rem', maxWidth: '640px'}}>
+            A collection of original entertainment concepts conceived and developed as complete creative worlds — each with its own perspective, musical language, movement identity, and enveloping atmosphere.
+          </p>
         </div>
         <div className="ow-hero-scroll">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
