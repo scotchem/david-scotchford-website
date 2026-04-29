@@ -39,7 +39,7 @@ const concepts: Concept[] = [
     accentColor: '#c0392b',
     image: '/fly_right_poster_ow.png',
     description:
-      'A fly-by-the-seat-of-your-pants ride into the roots of early jazz, where rhythm, risk, and improvisation reign supreme.',
+      'A fly-by-the-seat-of-your-pants ride into the roots of early jazz, where rhythm, and improvisation reign supreme.',
     longDescription:
       '[FULL PARAGRAPH TO BE ADDED]',
     details: [
