@@ -272,9 +272,9 @@ export default function Testimonials() {
       <footer>
         <div className="container">
           <div className="social-links">
-            <a href="#" title="LinkedIn">in</a>
-            <a href="#" title="Instagram">@</a>
-            <a href="#" title="Email">✉</a>
+            <a href="https://www.linkedin.com/in/david-scotchford-7744665a/" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+            <a href="https://www.instagram.com/d.scotch/" title="Instagram" target="_blank" rel="noopener noreferrer">@</a>
+            <a href="mailto:scotchem@gmail.com" title="Email">✉</a>
           </div>
           <p>&copy; 2024 David Scotchford. All rights reserved.</p>
         </div>
