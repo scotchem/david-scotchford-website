@@ -979,6 +979,7 @@ footer p {
   grid-template-columns: 1fr 1fr;
   min-height: 600px;
   border-bottom: 1px solid rgba(139, 125, 107, 0.15);
+  align-items: start;
 }
 
 /* Fade-in animations */
@@ -1039,8 +1040,10 @@ footer p {
   padding: 5rem 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background: var(--dark-bg);
+  position: sticky;
+  top: 80px;
 }
 .ow-concept-card--fmwl .ow-concept-content {
   background: linear-gradient(135deg, rgba(20, 12, 8, 1) 0%, rgba(38, 24, 10, 1) 60%, rgba(28, 18, 8, 1) 100%);
