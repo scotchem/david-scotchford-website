@@ -33,20 +33,20 @@ const concepts: Concept[] = [
   },
   {
     id: 2,
-    title: 'In Tandem',
-    tagline: 'Two bodies. One language. The conversation of movement.',
-    label: 'Original Concept · Experiential & Theatrical',
-    accentColor: '#8b7d6b',
-    image: '/still_pascal_mia.png',
+    title: 'Fly Right',
+    tagline: 'Rhythm. Risk. Improvisation. Fly high into the night.',
+    label: 'Original Concept · Experiential Club-Theatre',
+    accentColor: '#c0392b',
+    image: '/fly_right_poster_ow.png',
     description:
-      'A pas de deux concept exploring the dialogue between two performers — the push and pull, the surrender and the lead.',
+      'A fly-by-the-seat-of-your-pants ride into the roots of early jazz, where rhythm, risk, and improvisation reign supreme.',
     longDescription:
-      'In Tandem is an intimate, high-concept original work built around the relationship between two performers in motion. It strips away spectacle to find something more essential: the conversation that happens between bodies when they truly listen to each other. Drawing from ballroom, contemporary dance, and theatrical storytelling, In Tandem is designed to work as a standalone performance piece, a featured segment within a larger production, or an immersive experiential entertainment moment aboard a cruise vessel or in an intimate theatrical setting.',
+      '[FULL PARAGRAPH TO BE ADDED]',
     details: [
-      'Intimate pas de deux performance concept',
-      'Adaptable: standalone or embedded in larger production',
-      'Ballroom, contemporary, and theatrical movement vocabulary',
-      'Designed for cruise, theatrical, and experiential settings',
+      'Original concept in development',
+      'Experiential club-theatre format',
+      'Rooted in early jazz, swing, and improvisation',
+      'Designed for intimate and immersive performance environments',
     ],
   },
 ];
