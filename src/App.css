@@ -1717,6 +1717,14 @@ footer p {
   transform: scale(1.05);
 }
 
+/* Zoom out cells 5 and 6 to show more of the image */
+.contact-mosaic-cell--5 .contact-mosaic-img,
+.contact-mosaic-cell--6 .contact-mosaic-img {
+  object-fit: contain;
+  object-position: center center;
+  background: #0a0a0a;
+}
+
 .contact-mosaic-overlay {
   position: absolute;
   inset: 0;
