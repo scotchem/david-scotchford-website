@@ -41,7 +41,7 @@ const concepts: Concept[] = [
     description:
       'A fly-by-the-seat-of-your-pants ride into the roots of early jazz, where rhythm, and improvisation reign supreme.',
     longDescription:
-      '[FULL PARAGRAPH TO BE ADDED]',
+      'Fly Right invites audiences into the raw electricity of an intimate jazz-club world, where music, movement, and personality collide in real time. Rooted in the early spirit of swing, Lindy hop, tap, and improvisation, the show is built on creative danger: performers interrupt, challenge, seduce, and outdo one another as rhythm passes hand to hand. The result is a spontaneous-feeling theatrical jam session — full of kinetic camaraderie, effortless virtuosity, and the sense that what happens tonight could only happen tonight.',
     details: [
       'Original concept in development',
       'Experiential club-theatre format',
