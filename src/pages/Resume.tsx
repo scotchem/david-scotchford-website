@@ -11,7 +11,7 @@ export default function Resume() {
       <section className="resume-hero">
         <div className="resume-hero-img-wrap">
           <img
-            src="/headshot.png"
+            src="/resume_hero.png"
             alt="David Scotchford"
             className="resume-hero-img"
           />
