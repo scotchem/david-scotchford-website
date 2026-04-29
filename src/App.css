@@ -1888,6 +1888,12 @@ footer p {
   letter-spacing: 0.01em;
   line-height: 1.4;
 }
+.contact-info-link[href^="tel"] {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  font-size: 1.3rem;
+}
 
 .contact-info-link:hover {
   color: var(--warm-white);
