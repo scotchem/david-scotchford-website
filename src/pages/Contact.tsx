@@ -49,7 +49,6 @@ export default function Contact({ setCurrentPage: _setCurrentPage }: ContactProp
           <div className="contact-mosaic-global-overlay" />
         </div>
         <div className="contact-hero-content">
-          <p className="contact-hero-eyebrow">Let's Create Together</p>
           <h1 className="contact-hero-title">Start a<br />Conversation</h1>
         </div>
       </section>

@@ -153,7 +153,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
           <div className="testimonials-grid">
             <div className="testimonial">
               <p className="testimonial-quote">
-                "I have worked with David Scotchford on a number of shows in which he was associate choreographer until, the latest, our Stockholm production where he was the choreographer. He is a vibrant and inventive choreographer; as a colleague I find him endlessly innovative, responsible, flexible, indefatigable. He has a natural rapport with the dancers that makes them love and respect him. In short -- I would work with him again in a flash, intend to do so -- and consider myself lucky to have the chance."
+                "I have worked with David Scotchford on a number of shows in which he was associate choreographer until, the latest, our Stockholm production where he was the choreographer. He is a vibrant and inventive choreographer; as a colleague I find him endlessly innovative, responsible, flexible, indefatigable. He has a natural rapport with the dancers that makes them love and respect him. In short — I would work with him again in a flash, intend to do so — and consider myself lucky to have the chance."
               </p>
               <p className="testimonial-author">Eleanor Bergstein</p>
               <p className="testimonial-title">Writer/Creator of Dirty Dancing (Film and Stage Production)</p>
