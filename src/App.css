@@ -589,6 +589,25 @@ footer p {
   font-style: italic;
   color: var(--accent-gold);
 }
+.credits-portfolio-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--accent-gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.credits-portfolio-link:hover {
+  border-bottom-color: var(--accent-gold);
+}
 
 /* Featured Project Section */
 .featured-project-section {

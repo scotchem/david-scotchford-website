@@ -121,6 +121,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
           <p className="credits-text">
             David has contributed to the development and realization of live entertainment across Broadway, cruise, and international production environments. He spent several years as an associate to Tony Award–winning choreographer Warren Carlyle, contributing to numerous productions and workshops, including the Broadway revival of <em>The Music Man</em>. His work in premium cruise entertainment and international musical production rollouts has given him deep experience in shaping large-scale productions for global audiences, alongside choreography credits that include international productions of <em>Dirty Dancing</em> and <em>In Tandem</em> for RWS Step One Dance Company.
           </p>
+          <button className="credits-portfolio-link" onClick={() => setCurrentPage && setCurrentPage('portfolio')}>View Full Portfolio →</button>
         </div>
       </section>
 

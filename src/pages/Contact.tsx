@@ -76,12 +76,12 @@ export default function Contact({ setCurrentPage: _setCurrentPage }: ContactProp
               <p className="contact-info-value">New York, NY</p>
             </div>
             <div className="contact-info-block">
-              <p className="contact-info-label">Available for</p>
-              <p className="contact-info-value">Cruise Entertainment</p>
-              <p className="contact-info-value">Broadway &amp; Theatrical</p>
-              <p className="contact-info-value">Original Concept Development</p>
+              <p className="contact-info-label">Creative Services Across</p>
+              <p className="contact-info-value">Cruise Entertainment &amp; Destination Experiences</p>
+              <p className="contact-info-value">Broadway, Theatrical &amp; Concert Production</p>
+              <p className="contact-info-value">Original Show &amp; Concept Development</p>
               <p className="contact-info-value">Creative Consulting</p>
-              <p className="contact-info-value">Experiential Performance</p>
+              <p className="contact-info-value">Experiential Performance &amp; Live Events</p>
             </div>
             <div className="contact-info-block">
               <p className="contact-info-label">Email</p>
