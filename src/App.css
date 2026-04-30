@@ -637,7 +637,16 @@ footer p {
   font-size: 1.125rem;
   line-height: 1.8;
   color: rgba(245, 241, 237, 0.8);
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
+}
+.featured-description--sub {
+  font-size: 0.85rem;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .featured-link {

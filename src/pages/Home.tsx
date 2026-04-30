@@ -134,8 +134,11 @@ export default function Home({ setCurrentPage }: HomeProps) {
             </div>
             <div className="featured-content">
               <h3 className="featured-title">From Miami With Love</h3>
+              <p className="featured-description featured-description--sub">
+                An original live entertainment concept created for cruise and theatrical performance environments.
+              </p>
               <p className="featured-description">
-                An original entertainment concept that captures the vibrant energy, romance, and spectacle of Miami's cultural landscape. This signature world blends choreography, music, and visual storytelling to create an immersive experience that celebrates movement, passion, and the electric spirit of the city.
+                Built around the heat, Cuban-inflected rhythms, and spectacle of Miami, From Miami With Love invites audiences into a world that is sensual, musical, and alive. Salsa heat meets midnight cool as nightlife, ocean air, and human connection collide in a vivid celebration of movement, desire, and belonging.
               </p>
               <button className="featured-link" onClick={() => setCurrentPage && setCurrentPage('originalwork')}>Explore Concepts →</button>
             </div>
