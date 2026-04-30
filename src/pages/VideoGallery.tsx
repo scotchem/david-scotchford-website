@@ -24,7 +24,7 @@ const videos: VideoItem[] = [
     description:
       'Featuring a choreography reel and extended reel spanning cruise, international, and regional theatrical productions.',
     thumbnail: '/still_reel_hero.jpg',
-    year: '2024',
+    year: '',
     clips: [
       { id: '315517275', label: 'Featured Reel' },
       { id: '374811280', label: 'Extended Reel' },
@@ -56,7 +56,7 @@ const videos: VideoItem[] = [
     description:
       'A partner-driven dance production created for Step One Dance Company with RWS, exploring the interplay of movement, connection, and relationship aboard Holland America Line.',
     thumbnail: '/still_in_tandem.jpg',
-    year: 'In Development',
+    year: '',
     clips: [
       { id: '1156632794', label: 'Besamé Mucho' },
       { id: '1156910168', label: 'Let\'s Get Loud' },
