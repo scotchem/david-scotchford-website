@@ -1756,6 +1756,9 @@ footer p {
   inset: 0;
   background: rgba(10, 10, 10, 0.17);
 }
+.contact-mosaic-cell--5 .contact-mosaic-overlay {
+  background: rgba(10, 10, 10, 0.35);
+}
 .contact-mosaic-global-overlay {
   position: absolute;
   inset: 0;
