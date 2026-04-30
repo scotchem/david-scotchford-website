@@ -642,15 +642,20 @@ footer p {
 
 .featured-link {
   display: inline-block;
-  color: var(--accent-gold);
+  padding: 0.9rem 2.2rem;
+  background: var(--accent-gold);
+  color: var(--dark-bg);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid var(--accent-gold);
+  border-radius: 2px;
+  cursor: pointer;
   transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
 }
-
 .featured-link:hover {
-  border-bottom-color: var(--accent-gold);
+  background: transparent;
+  color: var(--accent-gold);
 }
 
 /* Testimonials Section */
