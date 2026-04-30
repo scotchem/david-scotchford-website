@@ -44,7 +44,7 @@ const videos: VideoItem[] = [
     title: 'Fly Right',
     category: 'Original Concept',
     description:
-      'A fly-by-the-seat-of-your-pants ride into the roots of early jazz, where rhythm, risk, and improvisation reign supreme.',
+      'A fly-by-the-seat-of-your-pants ride into the roots of early jazz, where rhythm and improvisation reign supreme.',
     thumbnail: '/still_fly_right.png',
     year: 'In Development',
   },
