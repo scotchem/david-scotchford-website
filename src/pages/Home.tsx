@@ -78,7 +78,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
       <section className="philosophy-section">
         <div className="section-container">
           <p className="philosophy-text">
-            Live entertainment should do more than impress — it should transport. Drawing on experience across theatrical, cruise, and large-scale production environments, we create experiences that are vivid, immersive, and designed to be felt as much as seen.
+            Live entertainment should do more than impress — it should transport. Grounded in theatrical craft and shaped by experience across cruise, stage, and large-scale production environments, each project is designed to be vivid, immersive, and alive — crafted to be felt as much as seen.
           </p>
         </div>
       </section>
