@@ -49,7 +49,7 @@ export default function Contact({ setCurrentPage: _setCurrentPage }: ContactProp
           <div className="contact-mosaic-global-overlay" />
         </div>
         <div className="contact-hero-content">
-          <h1 className="contact-hero-title">Start a<br />Conversation</h1>
+          <h1 className="contact-hero-title">Let’s build something<br />together.</h1>
         </div>
       </section>
 
@@ -57,7 +57,7 @@ export default function Contact({ setCurrentPage: _setCurrentPage }: ContactProp
       <section className="contact-intro">
         <div className="contact-intro-inner">
           <p className="contact-intro-text">
-            Whether you're developing an original concept, shaping a new production, looking for a creative collaborator, or simply want to explore what's possible — reach out. Every great project begins with a conversation.
+            Whether you’re developing an original concept, shaping a new production, looking for a creative collaborator, or simply want to explore what’s possible — reach out. Exciting things happen when creative people come together.
           </p>
         </div>
       </section>
