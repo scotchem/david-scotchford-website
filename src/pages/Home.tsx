@@ -202,7 +202,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
         <div className="section-container">
           <h2 className="closing-title">Let’s build something together.</h2>
           <p className="closing-text">
-            If you’re developing a new show, shaping an existing concept, refreshing entertainment content, or looking for a creative partner who can help connect movement, music, staging, and audience experience, I’d love to work with you.
+            If you’re developing a new show, shaping an existing concept, refreshing entertainment content, or looking for a creative partner who can help connect movement, music, staging, and audience experience, I’d love to hear from you.
           </p>
           <button className="cta-button" onClick={() => setCurrentPage && setCurrentPage('contact')}>Contact David</button>
         </div>
