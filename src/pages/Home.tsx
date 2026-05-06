@@ -90,8 +90,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
             <p className="meet-david-eyebrow">Meet David</p>
             <p className="meet-david-subheading">A rehearsal-room creative with an intuitive, people-first approach.</p>
             <p className="meet-david-body">David is at his best in the studio: shaping ideas, reading the energy of performers, solving problems quickly, and helping material become clearer, sharper, and more alive.</p>
-            <p className="meet-david-body">His process is built on respect, collaboration, and a genuine enjoyment of the work itself. He believes the best results come when people feel supported, challenged, and free enough to play — when the room has structure, but also energy, humor, and trust.</p>
-            <p className="meet-david-body">He believes the best results come when people feel supported, challenged, and free enough to play — when the rehearsal has structure, but also energy, humor, and trust.</p>
+            <p className="meet-david-body">His process is built on respect, collaboration, and a genuine enjoyment of the work itself.</p>
             <p className="meet-david-body">Whether working with dancers, singers, actors, or production teams, David brings an energized, musical, process-oriented approach that supports performers at their best and helps the material connect more deeply with an audience.</p>
           </div>
           <div className="meet-david-photo">
