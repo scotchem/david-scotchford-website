@@ -69,7 +69,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
       <section className="positioning-section">
         <div className="section-container">
           <p className="positioning-text">
-            Original show creation, direction, choreography, and creative development.
+            Premium live entertainment created with musical impact, theatrical detail, and authentic audience connection.
           </p>
         </div>
       </section>
@@ -80,6 +80,22 @@ export default function Home({ setCurrentPage }: HomeProps) {
           <p className="philosophy-text">
             Live entertainment should do more than impress — it should transport. Grounded in theatrical craft and shaped by experience across cruise, stage, and large-scale production environments, each project is designed to be vivid, immersive, and alive — made to be felt as much as seen.
           </p>
+        </div>
+      </section>
+
+      {/* Section: Meet David */}
+      <section className="meet-david-section">
+        <div className="meet-david-inner">
+          <div className="meet-david-text">
+            <p className="meet-david-eyebrow">Meet David</p>
+            <p className="meet-david-subheading">A rehearsal-room creative with an intuitive, people-first approach.</p>
+            <p className="meet-david-body">David is at his best inside the room: shaping ideas, reading the energy of performers, solving problems quickly, and helping material become clearer, sharper, and more alive.</p>
+            <p className="meet-david-body">His process is built on respect, collaboration, and a genuine enjoyment of the work itself. He believes the best results come when people feel supported, challenged, and free enough to play — when the room has structure, but also energy, humor, and trust.</p>
+            <p className="meet-david-body">Whether working with dancers, singers, actors, or production teams, David brings a calm, musical, process-oriented approach that helps performers do their best work and helps the material connect more deeply with an audience.</p>
+          </div>
+          <div className="meet-david-photo">
+            <img src="/david-rehearsal.jpg" alt="David Scotchford in the rehearsal room" />
+          </div>
         </div>
       </section>
 

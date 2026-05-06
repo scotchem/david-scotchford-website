@@ -491,6 +491,59 @@ footer p {
   font-weight: 400;
 }
 
+/* Meet David Section */
+.meet-david-section {
+  padding: 8rem 2rem;
+  background: var(--dark-bg);
+}
+.meet-david-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 6rem;
+  align-items: start;
+}
+.meet-david-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
+}
+.meet-david-subheading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.meet-david-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: rgba(245, 241, 237, 0.8);
+  margin-bottom: 1.4rem;
+}
+.meet-david-body:last-child {
+  margin-bottom: 0;
+}
+.meet-david-photo {
+  position: sticky;
+  top: 6rem;
+}
+.meet-david-photo img {
+  width: 100%;
+  border-radius: 2px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+
 /* Pillars Section */
 .pillars-section {
   padding: 8rem 2rem;
@@ -779,6 +832,18 @@ footer p {
   .positioning-text,
   .philosophy-text {
     font-size: 1.25rem;
+  }
+  .meet-david-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .meet-david-photo {
+    position: static;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .meet-david-subheading {
+    font-size: 1.3rem;
   }
 
   .section-title {
