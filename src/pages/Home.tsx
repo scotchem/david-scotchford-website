@@ -200,10 +200,11 @@ export default function Home({ setCurrentPage }: HomeProps) {
       {/* Section 8: Closing Invitation */}
       <section className="closing-section">
         <div className="section-container">
+          <h2 className="closing-title">Let’s build something together.</h2>
           <p className="closing-text">
-            Whether developing an original concept, shaping a new production, or refining an existing work, David Scotchford brings a cinematic eye, choreographic intelligence, and a deep understanding of audience experience to the creation of premium live entertainment.
+            If you’re developing a new show, shaping an existing concept, refreshing entertainment content, or looking for a creative partner who can help connect movement, music, staging, and audience experience, I’d love to work with you.
           </p>
-          <button className="cta-button" onClick={() => setCurrentPage && setCurrentPage('contact')}>Start a Conversation</button>
+          <button className="cta-button" onClick={() => setCurrentPage && setCurrentPage('contact')}>Contact David</button>
         </div>
       </section>
     </div>
