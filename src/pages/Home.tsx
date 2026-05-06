@@ -89,9 +89,10 @@ export default function Home({ setCurrentPage }: HomeProps) {
           <div className="meet-david-text">
             <p className="meet-david-eyebrow">Meet David</p>
             <p className="meet-david-subheading">A rehearsal-room creative with an intuitive, people-first approach.</p>
-            <p className="meet-david-body">David is at his best inside the room: shaping ideas, reading the energy of performers, solving problems quickly, and helping material become clearer, sharper, and more alive.</p>
+            <p className="meet-david-body">David is at his best in the studio: shaping ideas, reading the energy of performers, solving problems quickly, and helping material become clearer, sharper, and more alive.</p>
             <p className="meet-david-body">His process is built on respect, collaboration, and a genuine enjoyment of the work itself. He believes the best results come when people feel supported, challenged, and free enough to play — when the room has structure, but also energy, humor, and trust.</p>
-            <p className="meet-david-body">Whether working with dancers, singers, actors, or production teams, David brings a calm, musical, process-oriented approach that helps performers do their best work and helps the material connect more deeply with an audience.</p>
+            <p className="meet-david-body">He believes the best results come when people feel supported, challenged, and free enough to play — when the rehearsal has structure, but also energy, humor, and trust.</p>
+            <p className="meet-david-body">Whether working with dancers, singers, actors, or production teams, David brings an energized, musical, process-oriented approach that supports performers at their best and helps the material connect more deeply with an audience.</p>
           </div>
           <div className="meet-david-photo">
             <img src="/david-rehearsal.jpg" alt="David Scotchford in the rehearsal room" />
@@ -114,7 +115,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
         <div className="pillars-video-overlay" />
         <div className="section-container" style={{ position: 'relative', zIndex: 2 }}>
           <h2 className="pillars-heading">What I Help Create</h2>
-          <p className="pillars-subheading">David works with producers, directors, and entertainment teams to shape live performance from the inside out — clarifying the idea, building the creative language, and helping the work connect with an audience.</p>
+          <p className="pillars-subheading">David works with producers, directors, and entertainment teams to shape live performance from the inside out — clarifying an idea, building the creative language, and helping the work connect with an audience.</p>
           <div className="pillars-grid">
             <div className="pillar">
               <h3 className="pillar-title">Original Concepts</h3>
