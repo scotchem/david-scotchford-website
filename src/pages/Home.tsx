@@ -113,18 +113,20 @@ export default function Home({ setCurrentPage }: HomeProps) {
         />
         <div className="pillars-video-overlay" />
         <div className="section-container" style={{ position: 'relative', zIndex: 2 }}>
+          <h2 className="pillars-heading">What I Help Create</h2>
+          <p className="pillars-subheading">David works with producers, directors, and entertainment teams to shape live performance from the inside out — clarifying the idea, building the creative language, and helping the work connect with an audience.</p>
           <div className="pillars-grid">
             <div className="pillar">
               <h3 className="pillar-title">Original Concepts</h3>
-              <p className="pillar-text">New live entertainment ideas, and audience experiences developed from the ground up.</p>
+              <p className="pillar-text">New show ideas, audience experiences, music-driven worlds, and entertainment formats developed from the ground up.</p>
             </div>
             <div className="pillar">
               <h3 className="pillar-title">Creative Development</h3>
-              <p className="pillar-text">Collaborating with creative teams to refine, elevate, and strengthen work in development.</p>
+              <p className="pillar-text">Collaboration on new or existing material to clarify the concept, strengthen the structure, sharpen the rhythm, and elevate the audience journey.</p>
             </div>
             <div className="pillar">
-              <h3 className="pillar-title">Direction & Choreography</h3>
-              <p className="pillar-text">Elevating movement and performance to bring each piece fully to life.</p>
+              <h3 className="pillar-title">Direction &amp; Choreography</h3>
+              <p className="pillar-text">Staging, movement, and performance direction that bring the piece to life with musicality, theatrical detail, and emotional impact.</p>
             </div>
           </div>
         </div>
