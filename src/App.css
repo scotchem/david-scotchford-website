@@ -1188,6 +1188,14 @@ footer p {
   background: linear-gradient(135deg, rgba(20, 12, 8, 1) 0%, rgba(38, 24, 10, 1) 60%, rgba(28, 18, 8, 1) 100%);
 }
 
+.ow-scroll-arrow {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  animation: scrollBounce 2s ease-in-out infinite;
+  opacity: 0.7;
+}
+
 .ow-concept-label {
   font-family: 'Inter', sans-serif;
   font-size: 0.7rem;
