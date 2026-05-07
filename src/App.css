@@ -1188,8 +1188,15 @@ footer p {
   background: linear-gradient(135deg, rgba(20, 12, 8, 1) 0%, rgba(38, 24, 10, 1) 60%, rgba(28, 18, 8, 1) 100%);
 }
 
+.ow-scroll-arrow-divider {
+  background: var(--dark-bg);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(139, 125, 107, 0.15);
+}
+
 .ow-scroll-arrow {
-  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   animation: scrollBounce 2s ease-in-out infinite;
