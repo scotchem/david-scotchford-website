@@ -114,6 +114,15 @@ function ConceptCard({ concept, index }: { concept: Concept; index: number }) {
         >
           {expanded ? 'Close' : 'Explore This Concept'} {expanded ? '↑' : '→'}
         </button>
+        {concept.id === 1 && (
+          <div className="ow-scroll-arrow-footer">
+            <div className="ow-scroll-arrow">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 9l7 7 7-7" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -160,18 +169,7 @@ export default function OriginalWork() {
       {/* Concepts */}
       <section className="ow-concepts">
         {concepts.map((concept, index) => (
-          <>
-            <ConceptCard key={concept.id} concept={concept} index={index} />
-            {index === 0 && (
-              <div className="ow-scroll-arrow-divider">
-                <div className="ow-scroll-arrow">
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 9l7 7 7-7" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-              </div>
-            )}
-          </>
+          <ConceptCard key={concept.id} concept={concept} index={index} />
         ))}
       </section>
 
