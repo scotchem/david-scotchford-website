@@ -1,47 +1,37 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-interface NavigationProps {
-  currentPage: string;
-  setCurrentPage: (page: any) => void;
-}
-
-export default function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
+export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { pathname } = useLocation();
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'video', label: 'Portfolio' },
-    { id: 'originalwork', label: 'Original Work' },
-    { id: 'resume', label: 'Resume' },
-    { id: 'contact', label: 'Contact' },
+    { path: '/', label: 'Home' },
+    { path: '/portfolio', label: 'Portfolio' },
+    { path: '/original-work', label: 'Original Work' },
+    { path: '/resume', label: 'Resume' },
+    { path: '/contact', label: 'Contact' },
   ];
 
-  const handleNavClick = (page: string) => {
-    setCurrentPage(page);
-    setMobileMenuOpen(false);
-    window.scrollTo(0, 0);
-  };
+  const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
     <nav>
       <div className="container">
-        <a href="#" className="logo" onClick={() => handleNavClick('home')}>
+        <Link to="/" className="logo" onClick={closeMobileMenu}>
           David Scotchford
-        </a>
+        </Link>
 
         <ul className="nav-links">
           {navItems.map((item) => (
-            <li key={item.id}>
-              <a
-                href="#"
-                className={currentPage === item.id ? 'active' : ''}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick(item.id);
-                }}
+            <li key={item.path}>
+              <Link
+                to={item.path}
+                className={pathname === item.path ? 'active' : ''}
+                onClick={closeMobileMenu}
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -50,6 +40,7 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
           className="mobile-menu-btn"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={mobileMenuOpen}
         >
           {mobileMenuOpen ? '✕' : '☰'}
         </button>
@@ -59,17 +50,14 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
         {mobileMenuOpen && (
           <ul className="mobile-nav-links">
             {navItems.map((item) => (
-              <li key={item.id}>
-                <a
-                  href="#"
-                  className={`${currentPage === item.id ? 'active' : ''}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavClick(item.id);
-                  }}
+              <li key={item.path}>
+                <Link
+                  to={item.path}
+                  className={pathname === item.path ? 'active' : ''}
+                  onClick={closeMobileMenu}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

@@ -1,10 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-interface HomeProps {
-  setCurrentPage?: (page: string) => void;
-}
-
-export default function Home({ setCurrentPage }: HomeProps) {
+export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const heroVideoRef = useRef<HTMLVideoElement>(null);
   const section4VideoRef = useRef<HTMLVideoElement>(null);
@@ -148,7 +145,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
               <p className="featured-description">
                 Built around the heat, Cuban-inflected rhythms, and spectacle of Miami, From Miami With Love invites audiences into a world that is sensual, musical, and alive. Salsa heat meets midnight cool as nightlife, ocean air, and human connection collide in a vivid celebration of movement, desire, and belonging.
               </p>
-              <button className="featured-link" onClick={() => setCurrentPage && setCurrentPage('originalwork')}>Explore Concepts →</button>
+              <Link to="/original-work" className="featured-link">Explore Concepts →</Link>
             </div>
           </div>
         </div>
@@ -161,7 +158,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
           <p className="credits-text">
             David has contributed to the development and realization of live entertainment across Broadway, cruise, and international production environments. He spent several years as an associate to Tony Award–winning choreographer Warren Carlyle, contributing to numerous productions and workshops, including the Broadway revival of <em>The Music Man</em>. His work in premium cruise entertainment and international musical production rollouts has given him deep experience in shaping large-scale productions for global audiences, alongside choreography credits that include international productions of <em>Dirty Dancing</em> and <em>In Tandem</em> for RWS Step One Dance Company.
           </p>
-          <button className="credits-portfolio-link credits-portfolio-link--boxed" onClick={() => setCurrentPage && setCurrentPage('portfolio')}>View Full Portfolio →</button>
+          <Link to="/portfolio" className="credits-portfolio-link credits-portfolio-link--boxed">View Full Portfolio →</Link>
         </div>
       </section>
 
@@ -204,7 +201,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
           <p className="closing-text">
             If you’re developing a new show, shaping an existing concept, refreshing entertainment content, or looking for a creative partner who can help connect movement, music, staging, and audience experience, I’d love to hear from you.
           </p>
-          <button className="cta-button" onClick={() => setCurrentPage && setCurrentPage('contact')}>Contact David</button>
+          <Link to="/contact" className="cta-button">Contact David</Link>
         </div>
       </section>
     </div>

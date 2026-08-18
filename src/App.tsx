@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
@@ -7,35 +8,40 @@ import OriginalWork from './pages/OriginalWork';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
-type Page = 'home' | 'video' | 'originalwork' | 'resume' | 'contact';
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
-function App() {
-  const [currentPage, setCurrentPage] = useState<Page>('home');
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'home':
-        return <Home setCurrentPage={(page: string) => setCurrentPage(page as Page)} />;
-      case 'video':
-        return <VideoGallery />;
-      case 'originalwork':
-        return <OriginalWork />;
-      case 'resume':
-        return <Resume />;
-      case 'contact':
-        return <Contact setCurrentPage={(page: string) => setCurrentPage(page as Page)} />;
-      default:
-        return <Home setCurrentPage={(page: string) => setCurrentPage(page as Page)} />;
-    }
-  };
+  return null;
+}
 
+function SiteRoutes() {
   return (
     <div className="min-h-screen bg-dark-bg text-warm-white">
-      <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <ScrollToTop />
+      <Navigation />
       <main className="flex-1">
-        {renderPage()}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<VideoGallery />} />
+          <Route path="/original-work" element={<OriginalWork />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </main>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <SiteRoutes />
+    </BrowserRouter>
   );
 }
 
